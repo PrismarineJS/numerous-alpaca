@@ -1,0 +1,29 @@
+{
+  "name": "numerous-alpaca",
+  "version": "1.0.0",
+  "description": "A Minecraft: PE Server in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/numerous-alpaca/numerous-alpaca.git"
+  },
+  "keywords": [
+    "pocket-minecraft",
+    "mcpe"
+  ],
+  "author": "mhsjlw <mhsjlw@aol.com>",
+  "contributors": [
+    "rom1504"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/numerous-alpaca/numerous-alpaca/issues"
+  },
+  "homepage": "https://github.com/numerous-alpaca/numerous-alpaca#readme",
+  "dependencies": {
+    "pocket-minecraft-protocol": "^1.0.0"
+  }
+}
