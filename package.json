@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/numerous-alpaca/numerous-alpaca#readme",
   "dependencies": {
-    "pocket-minecraft-protocol": "^1.0.0"
+    "pocket-minecraft-protocol": "^1.1.0",
+    "requireindex": "^1.1.0"
   }
 }
