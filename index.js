@@ -7,6 +7,10 @@ const requireIndex = require('requireindex');
 
 function createPEServer(options) {
   options = options || {};
+  if(options.name == undefined) {
+    options.name = "Minecraft: PE Server";
+  }
+  options.name = 'MCPE;' + options.name + ';45 45;0.14.1;0;' + options["max-players"];
   const peServer = new PEServer();
   peServer.connect(options);
   return peServer;
