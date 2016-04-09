@@ -10,8 +10,8 @@ function createPEServer(options) {
   if(options.name == undefined) {
     options.name = "Minecraft: PE Server";
   }
-  options.name = 'MCPE;' + options.name + ';45 45;0.14.1;0;' + options["max-players"];
   const peServer = new PEServer();
+  options.name = 'MCPE;' + options.name + ';46 46;0.14.1;0;' + options["max-players"];
   peServer.connect(options);
   return peServer;
 }
