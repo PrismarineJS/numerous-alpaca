@@ -25,7 +25,6 @@
   "homepage": "https://github.com/numerous-alpaca/numerous-alpaca#readme",
   "dependencies": {
     "mcpe-anvil": "^1.0.0",
-    "node-uuid": "^1.4.7",
     "pocket-minecraft-protocol": "^2.0.1",
     "prismarine-nbt": "^1.0.0",
     "requireindex": "^1.1.0",
