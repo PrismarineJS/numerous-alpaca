@@ -4,9 +4,9 @@ process.env.NODE_ENV = 'test';
 
 const net = require('net');
 const mc = require('pocket-minecraft-protocol');
-var os = require("os");
+var os = require('os');
 
-describe("server", function() {
+describe('server', function() {
   this.timeout(5000);
   let serv;
   let client;
@@ -14,7 +14,7 @@ describe("server", function() {
   let listening = false;
 
   before(function(done) {
-    serv = require("../app");
+    serv = require('../app');
 
     client = mc.createClient({
       host: os.hostname(),
@@ -22,7 +22,7 @@ describe("server", function() {
       username: 'echo'
     });
 
-    serv._server.socket.on("listening", function() {
+    serv._server.socket.on('listening', function() {
       listening = true;
       done(null);
     });
@@ -30,20 +30,20 @@ describe("server", function() {
 
   after(function(done){
     serv._server.socket.close();
-    serv._server.socket.on("close", function() {
+    serv._server.socket.on('close', function() {
       client.end();
       done();
     });
   });
 
-  it("is running", function(done) {
+  it('is running', function(done) {
     if(listening) {
       done();
     }
   });
 
-  if(process.env.CIRCLECI != "true") {
-    it("can log in", function(done) {
+  if(process.env.CIRCLECI != 'true') {
+    it('can log in', function(done) {
       client.on('player_status', function() {
         done();
       });
@@ -57,13 +57,13 @@ describe("server", function() {
       });
     });
 
-    it("spawned", function(done) {
+    it('spawned', function(done) {
       if(spawned == true) {
         done(); // this is pretty hacky
       }
     });
-    
-    it("can chat", function(done) {
+
+    it('can chat', function(done) {
       client.writeMCPE('text', {
         type: 1,
         name: 'echo',
