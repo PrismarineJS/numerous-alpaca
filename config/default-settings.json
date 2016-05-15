@@ -1,5 +1,6 @@
 {
   "port": 19132,
   "name": "A Minecraft: PE Server",
-  "max-players": 20
+  "max-players": 20,
+  "plugins": {}
 }
