@@ -62,19 +62,19 @@ describe("server", function() {
         done(); // this is pretty hacky
       }
     });
+    
+    it("can chat", function(done) {
+      client.writeMCPE('text', {
+        type: 1,
+        name: 'echo',
+        message: 'hi'
+      });
+
+      client.on('text', function(packet) {
+        if('<' + packet.name + '> ' + packet.message == '<echo> hi') {
+          done();
+        }
+      });
+    });
   }
-
-  it("can chat", function(done) {
-    client.writeMCPE('text', {
-      type: 1,
-      name: 'echo',
-      message: 'hi'
-    });
-
-    client.on('text', function(packet) {
-      if('<' + packet.name + '> ' + packet.message == '<echo> hi') {
-        done();
-      }
-    });
-  });
 });
