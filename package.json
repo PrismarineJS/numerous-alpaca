@@ -4,7 +4,7 @@
   "description": "A Minecraft: PE Server in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive"
   },
   "repository": {
     "type": "git",
@@ -24,10 +24,14 @@
   },
   "homepage": "https://github.com/numerous-alpaca/numerous-alpaca#readme",
   "dependencies": {
+    "js-logger": "^1.2.0",
     "mcpe-anvil": "^1.0.0",
     "pocket-minecraft-protocol": "^2.0.1",
     "prismarine-nbt": "^1.0.0",
     "requireindex": "^1.1.0",
     "vec3": "^0.1.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
   }
 }
