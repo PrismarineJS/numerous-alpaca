@@ -26,7 +26,7 @@
   "dependencies": {
     "js-logger": "^1.2.0",
     "mcpe-anvil": "^1.0.0",
-    "pocket-minecraft-protocol": "^2.1.0",
+    "pocket-minecraft-protocol": "^2.2.0",
     "prismarine-nbt": "^1.0.0",
     "requireindex": "^1.1.0",
     "vec3": "^0.1.3"
