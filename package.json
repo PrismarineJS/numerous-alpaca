@@ -25,6 +25,7 @@
   "homepage": "https://github.com/numerous-alpaca/numerous-alpaca#readme",
   "dependencies": {
     "js-logger": "^1.2.0",
+    "mcpe-chunk": "^1.0.0",
     "pocket-minecraft-protocol": "^2.2.3",
     "prismarine-nbt": "^1.0.0",
     "requireindex": "^1.1.0",
