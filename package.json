@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/numerous-alpaca/numerous-alpaca#readme",
   "dependencies": {
-    "js-base64": "^2.1.9",
     "js-logger": "^1.2.0",
     "mcpe-chunk": "^1.0.0",
     "pocket-minecraft-protocol": "git://github.com/mhsjlw/pocket-minecraft-protocol.git#realms",
