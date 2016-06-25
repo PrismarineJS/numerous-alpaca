@@ -2,3 +2,4 @@ node_modules/
 npm-debug.log
 /plugins/
 config/settings.json
+.vscode
