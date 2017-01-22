@@ -11,7 +11,7 @@ function createPEServer(options) {
     options.name = 'Minecraft: PE Server';
   }
   const peServer = new PEServer();
-  options.name = 'MCPE;' + options.name + ';70 70;0.14.3;0;' + options['max-players'];
+  options.name = 'MCPE;' + options.name + ';100 100;1.0.0.0;0;' + options['max-players'];
   peServer.connect(options);
   return peServer;
 }
