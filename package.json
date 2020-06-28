@@ -32,6 +32,6 @@
     "vec3": "^0.1.3"
   },
   "devDependencies": {
-    "mocha": "^7.1.2"
+    "mocha": "^8.0.1"
   }
 }
