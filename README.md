@@ -1,4 +1,4 @@
-numerous-alpaca [![Build Status](https://img.shields.io/circleci/project/numerous-alpaca/numerous-alpaca/master.svg)](https://circleci.com/gh/numerous-alpaca/numerous-alpaca)
+numerous-alpaca ![CI](https://github.com/PrismarineJS/numerous-alpaca/workflows/CI/badge.svg)
 ===============
 
 A Minecraft: PE Server in JavaScript that includes a featureful JavaScript API
