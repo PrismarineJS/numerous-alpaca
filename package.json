@@ -27,7 +27,7 @@
     "js-logger": "^1.2.0",
     "mcpe-chunk": "^1.0.0",
     "pocket-minecraft-protocol": "^2.2.3",
-    "prismarine-nbt": "^1.0.0",
+    "prismarine-nbt": "^2.0.0",
     "requireindex": "^1.1.0",
     "vec3": "^0.1.3"
   },
