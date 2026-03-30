@@ -31,7 +31,7 @@ describe('server', function() {
   after(function(done){
     serv._server.socket.close();
     serv._server.socket.on('close', function() {
-      client.end();
+      if (client) client.end();
       done();
     });
   });
@@ -42,7 +42,7 @@ describe('server', function() {
     }
   });
 
-  if(process.env.CIRCLECI != 'true') {
+  if(process.env.CIRCLECI != 'true' && !process.env.CI) {
     it('can log in', function(done) {
       client.on('player_status', function() {
         done();
